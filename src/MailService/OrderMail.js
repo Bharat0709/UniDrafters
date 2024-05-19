@@ -2,7 +2,7 @@
 
 const sendEmailToSeller = async (sellerEmail, buyerDetails) => {
   const response = await fetch(
-    `http://localhost:8000/submit/seller/${sellerEmail}`,
+    `https://unidrafters-server.onrender.com/submit/seller/${sellerEmail}`,
     {
       method: 'POST',
       headers: {
@@ -44,7 +44,7 @@ const sendEmailToBuyer = async (buyerEmail, sellerDetails) => {
 const sendEmailToAdmin = async (orderDetails) => {
   console.log(orderDetails);
   const response = await fetch(
-    `http://localhost:8000/submit/admin/ipudrafters@gmail.com`,
+    `https://unidrafters-server.onrender.com/submit/admin/ipudrafters@gmail.com`,
     {
       method: 'POST',
       headers: {

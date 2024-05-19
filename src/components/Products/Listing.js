@@ -171,7 +171,7 @@ const ProductList = () => {
       product.isSold === false
     ) {
       const response = await fetch(
-        'http://localhost:8000/api/v1/order/createorder',
+        'https://unidrafters-server.onrender.com/api/v1/order/createorder',
         {
           method: 'POST',
           body: JSON.stringify({
