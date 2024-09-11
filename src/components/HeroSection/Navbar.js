@@ -68,13 +68,13 @@ function Navbar() {
       {isOpen && (
         <div className='lg:hidden absolute rounded-xl top-20 right-0 m-auto  left-0 bg-white w-10/12 text-black'>
           <div className='flex flex-col text-center p-4 space-y-2 text-black gap-2 '>
-            <NavLink
+            {/* <NavLink
               to={'/signup'}
               className='lg:block mr-2 text-sm  text-white pb-2 bg-sky-950 p-2 py-3 pl-4 pr-4 rounded-full'
               onClick={() => handleOptionClick('BUY')} // Modified to call handleMenuItemClick
             >
               Buy
-            </NavLink>{' '}
+            </NavLink>{' '} */}
             <NavLink
               to={'/signup'}
               className='lg:block mr-2 text-sm  text-black border py-3 pb-2 p-2 pl-4 pr-4 rounded-full'
