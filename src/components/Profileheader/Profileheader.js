@@ -44,12 +44,12 @@ function Profile() {
             <div className='absolute flex flex-col gap-0 top-10 right-0 bg-white shadow-md rounded-md p-2'>
               <p className='text-sm p-2'>{user.displayName}</p>
               <p className='text-xs p-2 text-gray-500'>{user.email}</p>
-              <NavLink
+              {/* <NavLink
                 to='/orders'
                 className='text-[#1c6db5] text-center bg-slate-100 rounded-full mt-2 mb-2 px-4 py-2 text-sm'
               >
                 My Orders
-              </NavLink>
+              </NavLink> */}
               <button
                 className='text-sm m-2 hover:underline text-center text-white mt-2 px-4 p-2 rounded-full bg-[#004182]'
                 onClick={handleLogout}

@@ -547,12 +547,12 @@ const SellerForm = () => {
         >
           {creatingProfile ? 'Creating Profile' : 'Create Profile'}
         </button>
-        <p className='my-2 text-md opacity-100'>
+        {/* <p className='my-2 text-md opacity-100'>
           Not a Seller?{' '}
           <NavLink to={'/buyerinfo'} className='text-[#1c6db5] mt-2 text-md z'>
             Buy Drafter
           </NavLink>
-        </p>
+        </p> */}
       </div>
       <div className='flex flex-col justify-center m-4 mt-0 mb-6 px-10 py-8 lg:md:xl:w-max rounded-xl bg-gradient-to-r from-yellow-200 to-yellow-300'>
         <h2 className='text-2xl font-semibold mb-4'>Terms and Conditions</h2>

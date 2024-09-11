@@ -21,26 +21,33 @@ export default function Hero() {
           </div>
           <div className='mt-14 xl:sm:lg:md:text-left text-[1.11rem] self-start not-italic leading-8 text-black text-center capitalize max-md:mt-10 max-md:max-w-9/12'>
             A platform where seniors can sell their drafters to juniors
-      
           </div>
           <div className='flex w-full lg:md:justify-start gap-5 justify-center self-start mt-8 text-base leading-7 capitalize whitespace-nowrap'>
-            <NavLink
+            {/* <NavLink
               to='/signup'
               onClick={() => handleOptionClick('BUY')}
               className='flex flex-col justify-center px-11 py-2.5 not-italic text-white bg-gradient-to-r from-slate-900 to-slate-700 rounded-[150px] max-md:px-10'
             >
               BUY
-            </NavLink>
-            <div className='flex flex-col justify-center px-11 py-2.5 not-italic text-slice-900 bg-white border border-sky-900 border-solid rounded-[150px] max-md:px-10'>
-              <NavLink to='/signup' onClick={() => handleOptionClick('SELL')}>
+            </NavLink> */}
+            <div className='flex flex-col justify-center '>
+              <NavLink
+                to='/signup'
+                onClick={() => handleOptionClick('SELL')}
+                className='flex flex-col justify-center px-11 py-2.5 not-italic text-black border-2 border-slate-900 rounded-[150px] max-md:px-10'
+              >
                 SELL
               </NavLink>
             </div>
           </div>
+          <p className='mt-6 text-left self-start'>
+            {' '}
+            Powered by Let's Bunk Today Community
+          </p>
           <div className='flex gap-5 w-full self-start mt-16 text-black max-md:mt-10'>
             <div className='flex flex-col w-full items-start gap-3 my-auto'>
               <div className='text-[1.2rem] text-center lg:md:text-left w-full not-italic'>
-                Our Average Price - ₹250{' '}
+                Our Average Price - ₹350{' '}
               </div>
               <div className='text-[1.2rem] text-center lg:md:text-left w-full not-italic'>
                 Market Average Price - ₹650{' '}
