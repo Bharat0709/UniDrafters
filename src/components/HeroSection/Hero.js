@@ -3,6 +3,7 @@ import HeroImage from '../../assets/images/HeroImage.png';
 import { FiExternalLink } from 'react-icons/fi';
 import Navbar from './Navbar';
 import { NavLink } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Hero() {
   const handleOptionClick = (option) => {
@@ -12,6 +13,7 @@ export default function Hero() {
   return (
     <>
       <Navbar />
+      <Analytics />
       <div className='flex h-screen lg:md:text-left p-6 pt-14 lg:md:pt-0 pt-35  text-center flex-wrap justify-around w-full items-center'>
         <div className='flex flex-col items-center justify-center max-md:max-w-full'>
           <div className='md:lg:text-5xl text-[1.6rem] not-italic text-black capitalize leading-[30px] max-md:max-w-full'>
