@@ -3,6 +3,7 @@ import HeroImage from '../../assets/images/HeroImage.png';
 import { FiExternalLink } from 'react-icons/fi';
 import Navbar from './Navbar';
 import { NavLink } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Hero() {
   const handleOptionClick = (option) => {
@@ -12,6 +13,7 @@ export default function Hero() {
   return (
     <>
       <Navbar />
+      <Analytics />
       <div className='flex h-screen lg:md:text-left p-6 pt-14 lg:md:pt-0 pt-35  text-center flex-wrap justify-around w-full items-center'>
         <div className='flex flex-col items-center justify-center max-md:max-w-full'>
           <div className='md:lg:text-5xl text-[1.6rem] not-italic text-black capitalize leading-[30px] max-md:max-w-full'>
@@ -24,13 +26,13 @@ export default function Hero() {
             A platform where seniors can sell their drafters to juniors
           </div>
           <div className='flex w-full lg:md:justify-start gap-5 justify-center self-start mt-8 text-base leading-7 capitalize whitespace-nowrap'>
-            {/* <NavLink
+            <NavLink
               to='/signup'
               onClick={() => handleOptionClick('BUY')}
-              className='flex flex-col justify-center px-11 py-2.5 not-italic text-white bg-gradient-to-r from-slate-900 to-slate-700 rounded-[150px] max-md:px-10'
+              className='flex flex-col justify-center px-11 py-2.5 not-italic text-black bg-white border-black border-2 rounded-[150px] max-md:px-10'
             >
               BUY
-            </NavLink> */}
+            </NavLink>
             <div className='flex flex-col justify-center '>
               <NavLink
                 to='/signup'
@@ -57,12 +59,12 @@ export default function Hero() {
           </div>
           <div className='flex gap-5 w-full self-start mt-16 text-black max-md:mt-10'>
             <div className='flex flex-col w-full items-start gap-3 my-auto'>
-              {/* <div className='text-[1.2rem] text-center lg:md:text-left w-full not-italic'>
+              <div className='text-[1.2rem] text-center lg:md:text-left w-full not-italic'>
                 Our Average Price - ₹350{' '}
               </div>
               <div className='text-[1.2rem] text-center lg:md:text-left w-full not-italic'>
                 Market Average Price - ₹650{' '}
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

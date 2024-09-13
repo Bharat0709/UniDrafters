@@ -47,14 +47,14 @@ function Navbar() {
       </div>
       {/* Desktop Menu Items */}
       <div className='hidden lg:flex lg:items-center pr-4 lg:space-x-2'>
-        {/* <NavLink
+        <NavLink
           to={'/signup'}
           id='SignUpButton'
           className='hidden lg:block p-[12px] mr-2 text-sm  text-sky-700 bg-white font-bold pl-8 pr-8 rounded-full'
           onClick={() => handleOptionClick('BUY')} // Modified to call handleMenuItemClick
         >
           Buy
-        </NavLink>{' '} */}
+        </NavLink>{' '}
         <NavLink
           to={'/signup'}
           id='LoginButton'

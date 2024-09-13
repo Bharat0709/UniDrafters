@@ -409,8 +409,10 @@ const ProductList = () => {
               </div>
               <div className='flex justify-center'>
                 <button
-                  onClick={() => handleOrder(product)}
-                  disabled={buyDisabled || product.isSold} // Disable if already sold
+                  onClick={() => {
+                    setSuccessMessage('Sale Live Soon! Stay Tuned!');
+                  }}
+                  disabled={false}
                   className={`rounded-full bg-gradient-to-r from-slate-900 to-slate-700 text-white px-5 py-2 ${
                     buyDisabled || product.isSold
                       ? 'opacity-50 cursor-not-allowed'
